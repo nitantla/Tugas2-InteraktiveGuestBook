@@ -25,3 +25,19 @@
     padding: 20px;
     box-sizing: border-box;
 }
+
+
+
+footer {
+    text-align: center;
+}
+
+.i{
+    font-size: 27px;
+}
+
+.pfooter {
+    padding-top: 10px;
+    opacity: 0.5;
+    font-size: smaller;
+}
