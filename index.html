@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Guestbook</title>
-    //link font awesome
+    <!-- link font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    //link bootstrap
+    <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    //link css
+    <!-- link css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -28,11 +28,35 @@
             </div>
         </div>
     </nav>
+    <main>
+        <section class="main py-5 bg-white">
+            <div class="container">
+                <div class="row g-4 my-9">
+                    <div class="col-12 md:col-6 lg:col-4">
+                        <div class="guestbook-form">
+                            <h1 class="title h4 bg-muted-accent">Leave Message</h1>
+                            <form id="guestbookForm" class="form">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name: </label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your full name" class="form-control">
+                                </div>
+                                <div class="mb-7">
+                                    <label for="message" class="form-label">Message: </label>
+                                    <textarea name="message" id="message" placeholder="Write your message here" class="form-control"></textarea>
+                                </div>
+                                <input type="submit" value="Submit Message" class="submit btn btn-solid theme-accent">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 
 
-    //file js
+    <!-- file js -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
